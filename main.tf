@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "rg" {
-  location = "eastus"
+  location = var.location
   name     = "${random_pet.prefix.id}-DevOpsTraining"
 }
